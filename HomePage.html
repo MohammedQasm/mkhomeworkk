@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquarium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #194569;
+            color: #FFF8DC;
+            text-align: center;
+            animation: backgroundTransition 2s infinite alternate ease-in-out;
+        }
+        @keyframes backgroundTransition {
+            0% { background-color: #194569; }
+            100% { background-color: #253f4b; }
+        }
+        .header {
+            padding: 20px;
+            background-color: #5F84A2;
+            color: #FFF8DC;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .menu {
+            background-color: #FD6F2F;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .menu li {
+            padding: 15px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu li:hover {
+            transform: scale(1.1);
+        }
+        .menu li a {
+            color: #FFF8DC;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #5F84A2;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            border-radius: 5px;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #FFF8DC;
+        }
+        .dropdown a:hover {
+            background-color: #194569;
+        }
+        .menu li:hover .dropdown {
+            display: block;
+        }
+        .grid img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .grid img:hover {
+            transform: scale(1.1);
+        }
+      
+        .footer {
+            background-color: #5F84A2;
+            color: #FFF8DC;
+            text-align: center;
+            padding: 15px;
+        }
+        .shark-list {
+            text-align: left;
+            margin-left: 20px;
+        }
+        .shark-list li a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   
+    
+    <!-- Navigation Menu -->
+    <ul class="menu">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="galleryPage.html">Gallery</a></li>
+        <li>
+            <a href="#">More</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Events</a>
+            </div>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+            <div class="dropdown">
+                <a href="https:\\www.Email.com\">Email</a>
+                <a href="https:\\www.facebook.com">Facebook</a>
+                <a href="https:\\www.youtube.com">Youtube</a>
+            </div>
+        </li>
+    </ul>
+
+     
+    <!-- Header -->
+    <div class="header">
+        <h1>The Aquarium World</h1>
+    </div>
+    
+    <!-- Content -->
+    <div>
+        <h2>About Aquariums</h2>
+        <p>Aquariums provide a safe and controlled environment to observe marine life up close. They are home to a variety of aquatic creatures, from small fish to large marine mammals, and play a key role in marine conservation and education.</p>
+        
+        <h2>Types of Sharks:</h2>
+        <ul class="shark-list">
+            <li><a href="#great_white">Great White Shark</a></li>
+            <li><a href="#hammerhead">Hammerhead Shark</a></li>
+            <li><a href="#tiger">Tiger Shark</a></li>
+            <li><a href="#whale">Whale Shark</a></li>
+            <li><a href="#bull">Bull Shark</a></li>
+        </ul>
+    </div>
+    
+    <div>
+        <h3 id="great_white">Great White Shark</h3>
+        <img src="The great white shark! At Neptune Islands, South Australia.jpeg" alt="Great White Shark">
+        <p>The Great White Shark is one of the ocean’s top predators. It is known for its powerful build and sharp teeth.</p>
+        
+        <h3 id="hammerhead">Hammerhead Shark</h3>
+        <img src="hamer.jpeg" alt="Hammerhead Shark">
+        <p>The Hammerhead Shark is easily recognizable due to its distinctive hammer-shaped head, which improves its vision.</p>
+        
+        <h3 id="tiger">Tiger Shark</h3>
+        <img src="Tiger Shark Facts.jpeg" alt="Tiger Shark">
+        <p>The Tiger Shark is a large shark species known for its striped body pattern and wide diet.</p>
+        
+        <h3 id="whale">Whale Shark</h3>
+        <img src="These 45 Cutthroat Animals Will Do Just About Anything to Survive.jpeg" alt="Whale Shark">
+        <p>The Whale Shark is the largest fish in the ocean. Despite its size, it is a gentle filter feeder.</p>
+        
+        <h3 id="bull">Bull Shark</h3>
+        <img src="20 Fun Facts About Bull Shark.jpeg" alt="Bull Shark">
+        <p>The Bull Shark is an aggressive species that can survive in both salt and fresh water.</p>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Aquarium World. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquarium Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #194569;
+            color: #FFF8DC;
+            text-align: center;
+            animation: backgroundTransition 1.5s infinite alternate ease-in-out;
+        }
+        @keyframes backgroundTransition {
+            0% { background-color: #194569; }
+            100% { background-color:#253f4b; }
+        }
+        .header {
+            padding: 20px;
+            background-color: #5F84A2;
+            color: #FFF8DC;
+        }
+        .menu {
+            background-color: #FD6F2F;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .menu li {
+            padding: 15px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu li:hover {
+            transform: scale(1.1);
+        }
+        .menu li a {
+            color: #FFF8DC;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #5F84A2;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            border-radius: 5px;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #FFF8DC;
+        }
+        .dropdown a:hover {
+            background-color: #194569;
+        }
+        .menu li:hover .dropdown {
+            display: block;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+        .image-grid img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-grid img:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #5F84A2;
+            color: #FFF8DC;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+    
+    <!-- Navigation Menu -->
+    <ul class="menu">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="galleryPage.html">Gallery</a></li>
+        <li>
+            <a href="#">More</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Events</a>
+            </div>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+            <div class="dropdown">
+                <a href="https:\\www.Email.com\">Email</a>
+                <a href="https:\\www.facebook.com">Facebook</a>
+                <a href="https:\\www.youtube.com">Youtube</a>
+            </div>
+        </li>
+    </ul>
+
+     
+    <!-- Header -->
+    <div class="header">
+        <h1>Gallery of The Aquarium World</h1>
+    </div>
+    
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="Goldfish Aquaponics_ Perfect Cycle Fish - HowtoAquaponic.jpeg" alt="Aquarium Image 1">
+        <img src="99b73e47-9c74-4c57-a2de-097912b5888f.jpeg" alt="Aquarium Image 2">
+        <img src="Childe _ Tartaglia _ Ajax _ Liyue _ Genshin Impact….jpeg" alt="Aquarium Image 3">
+        <img src="Download premium image of Koi fish swimming animal carp_ by Miiruuku about background, black background, animal, sea, and water 13599572.jpeg" alt="Aquarium Image 4">
+        <img src="@parisisarobot ❖˖_°࿐.jpeg" alt="Aquarium Image 5">
+        <img src="f5c5aa01-94d2-49f1-a3a5-30f304414e08.jpeg" alt="Aquarium Image 6">
+        <img src="5551829f-916a-4c97-893f-2dbf65c2e173.jpeg" alt="Aquarium Image 7">
+        <img src="Leopard Shark In Exmouth, Western Australia.jpeg" alt="Aquarium Image 8">
+        <img src="starfish.jpeg" alt="Aquarium Image 9">
+        <img src="hawaii aesthetic _ meditarranean summer _ summer….jpeg" alt="Aquarium Image 10">
+        <img src="62532c6f-a8a5-4ec5-8733-fce086fb8606.jpeg" alt="Aquarium Image 11">
+        <img src="3f7bfae8-832b-4a61-a5f8-bb15550eb4d1.jpeg" alt="Aquarium Image 12">
+    
+    
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Aquarium World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
